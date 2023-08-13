@@ -1,4 +1,5 @@
 vim
+htop
 git
 tldr
 tmux
