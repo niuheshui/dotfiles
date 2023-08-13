@@ -11,13 +11,3 @@ ssh
 zsh
 curl
 obs-studio
-
-
-
-
-
-
-
-
-
-sudo add-apt-repository ppa:obsproject/obs-studio
