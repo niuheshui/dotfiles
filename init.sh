@@ -21,4 +21,6 @@ create_link "$basic_dir/vim/.vim" "$HOME/.vim"
 create_link "$basic_dir/tmux/.tmux.conf" "$HOME/.tmux.conf"
 create_link "$basic_dir/git/.gitconfig" "$HOME/.gitconfig"
 create_link "$basic_dir/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
+create_link "$basic_dir/emacs/.emacs" "$HOME/.emacs"
+create_link "$basic_dir/emacs/.emacs.d" "$HOME/.emacs.d"
 
