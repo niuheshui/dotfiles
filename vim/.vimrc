@@ -80,12 +80,11 @@ set shiftwidth=4
 " 设置主题
 colorscheme desert
 
-
 " 折叠
 " manual 手动 退出文件不保存
 " indent 缩进
 " syntax 语法
 " marker 标记 退出可以保存
 set foldmethod=marker
-
+set hlsearch
 set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim 
