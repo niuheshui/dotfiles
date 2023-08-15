@@ -78,7 +78,7 @@ set tabstop=4
 set shiftwidth=4			
 
 " 设置主题
-colorscheme desert
+colorscheme 3dglasses
 
 " 折叠
 " manual 手动 退出文件不保存
@@ -88,3 +88,9 @@ colorscheme desert
 set foldmethod=marker
 set hlsearch
 set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim 
+
+" 提示菜单
+set wildmenu
+
+
+
