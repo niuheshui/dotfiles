@@ -1,3 +1,6 @@
 [submodule "vim/.vim/pack/vendor/start/nerdtree"]
 	path = vim/.vim/pack/vendor/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "shell/zsh/.oh-my-zsh"]
+	path = shell/zsh/.oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
