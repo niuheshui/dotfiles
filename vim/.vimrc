@@ -1,3 +1,53 @@
+" Mouse support 启用鼠标支持，允许在vim中使用鼠标进行操作
+set mouse=a
+set ttymouse=sgr
+set balloonevalterm
+" Styled and colored underline support 支持带样式和颜色的下划线，可以在vim中使用不同的下划线样式和颜色
+let &t_AU = "\e[58:5:%dm"
+let &t_8u = "\e[58:2:%lu:%lu:%lum"
+let &t_Us = "\e[4:2m"
+let &t_Cs = "\e[4:3m"
+let &t_ds = "\e[4:4m"
+let &t_Ds = "\e[4:5m"
+let &t_Ce = "\e[4:0m"
+" Strikethrough 支持删除线，可以在vim中使用删除线来标记文本
+let &t_Ts = "\e[9m"
+let &t_Te = "\e[29m"
+" Truecolor support 支持真彩色，可以在vim中使用真彩色来渲染文本
+let &t_8f = "\e[38:2:%lu:%lu:%lum"
+let &t_8b = "\e[48:2:%lu:%lu:%lum"
+let &t_RF = "\e]10;?\e\\"
+let &t_RB = "\e]11;?\e\\"
+" Bracketed paste 支持括号粘贴，用于在vim中粘贴带有括号的文本
+let &t_BE = "\e[?2004h"
+let &t_BD = "\e[?2004l"
+let &t_PS = "\e[200~"
+let &t_PE = "\e[201~"
+" Cursor control 控制光标行为
+" let &t_RC = "\e[?12$p"
+" let &t_SH = "\e[%d q"
+" let &t_RS = "\eP$q q\e\\"
+" let &t_SI = "\e[5 q"
+" let &t_SR = "\e[3 q"
+" let &t_EI = "\e[1 q"
+" let &t_VS = "\e[?12l"
+" Focus tracking 跟踪焦点的变化，当焦点从vim窗口切换到其他窗口时，执行相应的操作
+let &t_fe = "\e[?1004h"
+let &t_fd = "\e[?1004l"
+execute "set <FocusGained>=\<Esc>[I"
+execute "set <FocusLost>=\<Esc>[O"
+" Window title 设置vim窗口的标题，可以在终端中显示自定义的窗口标题
+let &t_ST = "\e[22;2t"
+let &t_RT = "\e[23;2t"
+
+" vim hardcodes background color erase even if the terminfo file does
+" not contain bce. This causes incorrect background rendering when
+" using a color theme with a background color in terminals such as
+" kitty that do not support background color erase.
+let &t_ut=''
+
+
+
 " Vim 基于 Vi. 设置“no兼容”会切换默认的 Vi 兼容模式并启用有用的 Vim 功能
 " 对于名为 '~/.vimrc' 的文件来说,这个配置选项不是必需的,因为如果该文件存在,Vim 会自动进入不兼容模式
 " 但我们将其包含在这里,以防万一该配置文件以其他方式加载（例如保存为 `foo`,然后 Vim 以 `vim -u foo` 启动）
@@ -50,10 +100,6 @@ nmap Q <Nop>
 " 禁用声音铃声,因为它很烦人
 set noerrorbells visualbell t_vb=
 
-" 启用鼠标支持
-" 您应该避免过度依赖它,但有时它很方便
-" set mouse+=a
-
 " 尽量避免使用方向键移动等不良习惯
 " 这并不是唯一可能的坏习惯
 " 例如,按住 h/j/k/l 键进行移动,而不是使用更高效的移动命令,也是一个坏习惯
@@ -103,6 +149,5 @@ set foldcolumn=0
 
 " 使用空格键代替zo和zc开关折叠
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
-
 " 开启真色彩
 set termguicolors
