@@ -1,4 +1,5 @@
 hugo
+mypy
 gcc
 g++
 vim
