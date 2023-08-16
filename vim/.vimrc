@@ -78,7 +78,7 @@ set tabstop=4
 set shiftwidth=4			
 
 " 设置主题
-colorscheme 3dglasses
+colorscheme desert
 
 " 折叠
 " manual 手动 退出文件不保存
@@ -92,5 +92,17 @@ set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim
 " 提示菜单
 set wildmenu
 
+" 使用空格替换Tab
+set expandtab
 
+" 退格键可以一次删除4个空格
+set softtabstop=4
 
+" 设置折叠区域宽度
+set foldcolumn=0
+
+" 使用空格键代替zo和zc开关折叠
+nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+
+" 开启真色彩
+set termguicolors
