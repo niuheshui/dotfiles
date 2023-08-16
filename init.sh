@@ -9,10 +9,7 @@ get_file_path() {
 	echo "$pdir/$fname"
 }
 create_link() {
-	if [ -e "$2" ]
-	then
-		rm -rf "$2"
-	fi	
+	rm -rf "$2"
 	ln -s $1 $2
 } 
 
@@ -23,4 +20,8 @@ create_link "$basic_dir/git/.gitconfig" "$HOME/.gitconfig"
 create_link "$basic_dir/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
 create_link "$basic_dir/emacs/.emacs" "$HOME/.emacs"
 create_link "$basic_dir/emacs/.emacs.d" "$HOME/.emacs.d"
+create_link "$basic_dir/shell/.aliases" "$HOME/.aliases"
+create_link "$basic_dir/shell/zsh/.oh-my-zsh" "$HOME/.oh-my-zsh"
+create_link "$basic_dir/shell/zsh/.zshrc" "$HOME/.zshrc"
+
 
