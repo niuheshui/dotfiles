@@ -148,6 +148,11 @@ set softtabstop=4
 set foldcolumn=0
 
 " 使用空格键代替zo和zc开关折叠
-nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+nnoremap <space> za
 " 开启真色彩
 set termguicolors
+
+" 设置显示隐藏字符
+" set list
+" 隐藏字符样式 eol:c 回车 tab:xyz 显示为xyyyyz这样 space:c 空格 trail: 行末的空格
+" set listchars=tab:>~,trail:·,eol:↵
