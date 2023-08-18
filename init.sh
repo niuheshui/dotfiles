@@ -23,5 +23,6 @@ create_link "$basic_dir/emacs/.emacs.d" "$HOME/.emacs.d"
 create_link "$basic_dir/shell/.aliases" "$HOME/.aliases"
 create_link "$basic_dir/shell/zsh/.oh-my-zsh" "$HOME/.oh-my-zsh"
 create_link "$basic_dir/shell/zsh/.zshrc" "$HOME/.zshrc"
+create_link "$basic_dir/shell/zsh/custom" "$HOME/custom"
 
 
