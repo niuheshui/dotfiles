@@ -14,7 +14,7 @@
 - git diff <filename>: 显示与暂存区文件的差异
 - git diff <revision> <filename>: 显示某个文件两个版本之间的差异
 - git checkout <revision>: 更新 HEAD 和目前的分支
-
+- git submodule update --init --recursive: 初始化更新仓库中的子模块，并且递归更新子模块中的子模块
 
 
 分支和合并
@@ -36,8 +36,8 @@
 - git fetch: 从远端获取对象/索引
 - git pull: 相当于 git fetch; git merge
 - git clone: 从远端下载仓库
-
-
+- git submodule add <url> <path>: 添加子模块
+- git rm --cached -f <path>: 删除子模块
 
 撤销
 - git commit --amend: 编辑提交的内容或信息
