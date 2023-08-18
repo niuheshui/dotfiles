@@ -156,3 +156,31 @@ set termguicolors
 " set list
 " 隐藏字符样式 eol:c 回车 tab:xyz 显示为xyyyyz这样 space:c 空格 trail: 行末的空格
 " set listchars=tab:>~,trail:·,eol:↵
+
+" 括号补全
+function! ClosePair(char)
+    if getline('.')[col('.') - 1] == a:char
+        return "\<Right>"
+    else
+        return a:char
+    endif
+endfunction
+
+
+inoremap ( ()<ESC>i
+inoremap ) <c-r>=ClosePair(')')<CR>
+inoremap { {<CR><CR>}<ESC><Up>i
+inoremap } <c-r>=ClosePair('}')<CR>
+inoremap [ []<ESC>i
+inoremap ] <c-r>=ClosePair(']')<CR>
+inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
+
+" 自动缩进
+" set autoindent
+
+" 智能缩进
+set smartindent
+
+" c-style缩进
+" set cindent
