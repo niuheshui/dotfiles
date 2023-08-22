@@ -185,3 +185,6 @@ set smartindent
 " c-style缩进
 " set cindent
 "/*}}}*/
+
+" command line mode path auto-completion
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
