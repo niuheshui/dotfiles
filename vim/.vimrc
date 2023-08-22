@@ -1,4 +1,4 @@
-" Mouse support 启用鼠标支持，允许在vim中使用鼠标进行操作
+" Mouse support 启用鼠标支持，允许在vim中使用鼠标进行操作/*{{{*/  
 set mouse=a
 set ttymouse=sgr
 set balloonevalterm
@@ -45,7 +45,7 @@ let &t_RT = "\e[23;2t"
 " using a color theme with a background color in terminals such as
 " kitty that do not support background color erase.
 let &t_ut=''
-
+"/*}}}*/
 
 
 " Vim 基于 Vi. 设置“no兼容”会切换默认的 Vi 兼容模式并启用有用的 Vim 功能
@@ -100,7 +100,7 @@ nmap Q <Nop>
 " 禁用声音铃声,因为它很烦人
 set noerrorbells visualbell t_vb=
 
-" 尽量避免使用方向键移动等不良习惯
+" 尽量避免使用方向键移动等不良习惯/*{{{*/
 " 这并不是唯一可能的坏习惯
 " 例如,按住 h/j/k/l 键进行移动,而不是使用更高效的移动命令,也是一个坏习惯
 " 前者可以通过 .vimrc 强制执行,而我们不知道如何阻止后者
@@ -114,7 +114,7 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
-
+"/*}}}*/
 " 输入的命令
 set showcmd
 " tab为4
@@ -124,7 +124,7 @@ set tabstop=4
 set shiftwidth=4			
 
 " 设置主题
-colorscheme desert
+colorscheme github
 
 " 折叠
 " manual 手动 退出文件不保存
@@ -132,9 +132,8 @@ colorscheme desert
 " syntax 语法
 " marker 标记 退出可以保存
 set foldmethod=marker
-set hlsearch
-set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim 
 
+set hlsearch
 " 提示菜单
 set wildmenu
 
@@ -157,7 +156,7 @@ set termguicolors
 " 隐藏字符样式 eol:c 回车 tab:xyz 显示为xyyyyz这样 space:c 空格 trail: 行末的空格
 " set listchars=tab:>~,trail:·,eol:↵
 
-" 括号补全
+" 括号补全/*{{{*/
 function! ClosePair(char)
     if getline('.')[col('.') - 1] == a:char
         return "\<Right>"
@@ -169,14 +168,15 @@ endfunction
 
 inoremap ( ()<ESC>i
 inoremap ) <c-r>=ClosePair(')')<CR>
-inoremap { {<CR><CR>}<ESC><Up>i
+inoremap { {}<ESC>i
 inoremap } <c-r>=ClosePair('}')<CR>
 inoremap [ []<ESC>i
 inoremap ] <c-r>=ClosePair(']')<CR>
 inoremap " ""<ESC>i
 inoremap ' ''<ESC>i
+"/*}}}*/
 
-" 自动缩进
+" 自动缩进/*{{{*/
 " set autoindent
 
 " 智能缩进
@@ -184,3 +184,4 @@ set smartindent
 
 " c-style缩进
 " set cindent
+"/*}}}*/
