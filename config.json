@@ -1,0 +1,46 @@
+[
+    {
+        "filename": "vim/.vimrc",
+        "linkpath": "~/.vimrc" 
+    },
+    {
+        "filename": "vim/.vim",
+        "linkpath": "~/.vim" 
+    },
+    {
+        "filename": "tmux/.tmux.conf",
+        "linkpath": "~/.tmux.conf"
+    },
+    {
+        "filename": "git/.gitconfig",
+        "linkpath": "~/.gitconfig"
+    },
+    {
+        "filename": "kitty/kitty.conf",
+        "linkpath": "~/.config/kitty/kitty.conf"
+    },
+    {
+        "filename": "emacs/.emacs",
+        "linkpath": "~/.emacs"
+    },
+    {
+        "filename": "emacs/.emacs.d",
+        "linkpath": "~/.emacs.d"
+    },
+    {
+        "filename": "shell/.aliases",
+        "linkpath": "~/.aliases"
+    },
+    {
+        "filename": "shell/zsh/.oh-my-zsh",
+        "linkpath": "~/.oh-my-zsh"
+    },
+    {
+        "filename": "shell/zsh/.zshrc",
+        "linkpath": "~/.zshrc"
+    },
+    {
+        "filename": "shell/zsh/.custom",
+        "linkpath": "~/.custom"
+    }
+]
