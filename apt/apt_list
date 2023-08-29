@@ -1,4 +1,8 @@
 hugo
+guake
+flameshot
+fish
+neovim
 mypy
 gcc
 g++

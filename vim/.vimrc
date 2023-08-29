@@ -172,8 +172,8 @@ inoremap { {}<ESC>i
 inoremap } <c-r>=ClosePair('}')<CR>
 inoremap [ []<ESC>i
 inoremap ] <c-r>=ClosePair(']')<CR>
-inoremap " ""<ESC>i
-inoremap ' ''<ESC>i
+inoremap "" ""<ESC>i
+inoremap '' ''<ESC>i
 "/*}}}*/
 
 " 自动缩进/*{{{*/
