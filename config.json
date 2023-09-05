@@ -1,5 +1,9 @@
 [
     {
+        "filename": "fish",
+        "linkpath": "~/.config/fish"
+    },
+    {
         "filename": "vim/.vimrc",
         "linkpath": "~/.vimrc" 
     },
