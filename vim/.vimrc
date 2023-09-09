@@ -136,9 +136,13 @@ set foldmethod=marker
 set hlsearch
 " 提示菜单
 set wildmenu
-
+"设置正则表达式的魔术（magic）模式
+set magic 
+setlocal noswapfile " 不要生成swap文件
 " 使用空格替换Tab
 set expandtab
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ Ln\ %l,\ Col\ %c/%L%) " 设置在状态行显示的信息
+
 
 " 退格键可以一次删除4个空格
 set softtabstop=4
