@@ -131,7 +131,7 @@ colorscheme evening
 " indent 缩进
 " syntax 语法
 " marker 标记 退出可以保存
-set foldmethod=marker
+set foldmethod=syntax
 
 set hlsearch
 " 提示菜单
