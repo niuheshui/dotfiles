@@ -6,5 +6,5 @@ if test ~/.aliases
     source ~/.aliases
 end
 
-export NEMU_HOME=/home/hadoop/ics2020/nemu
-export AM_HOME=/home/hadoop/ics2020/abstract-machine
+export NEMU_HOME=/home/niuheshui/ics2020/nemu
+export AM_HOME=/home/niuheshui/ics2020/abstract-machine
