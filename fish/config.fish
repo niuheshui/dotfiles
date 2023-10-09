@@ -6,6 +6,16 @@ if test ~/.aliases
     source ~/.aliases
 end
 
+function fish_greeting
+    echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    echo "┃░█░█░█▀▀░█░░░█░░░█▀█░░░█░█░█▀█░█▀▄░█▀▄░█┃"
+    echo "┃░█▀█░█▀▀░█░░░█░░░█░█░░░█▄█░█░█░█▀▄░█░█░▀┃"
+    echo "┃░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░░░▀░▀░▀▀▀░▀░▀░▀▀░░▀┃"
+    echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    echo "⭐   " (date) "  ⭐"
+    echo ""
+end
+
 export NEMU_HOME=$HOME/ics2020/nemu
 export AM_HOME=$HOME/ics2020/abstract-machine
 export REPO_DIR=$HOME/CS61B
