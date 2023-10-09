@@ -1,4 +1,5 @@
 numpy
+rich # 渲染markdown
 pands
 ppytsx3
 qrcode
