@@ -46,5 +46,9 @@
     {
         "filename": "shell/zsh/.custom",
         "linkpath": "~/.custom"
+    },
+    {
+        "filename": "vim/.gvimrc",
+        "linkpath": "~/.gvimrc"
     }
 ]
