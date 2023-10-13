@@ -115,6 +115,7 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 "/*}}}*/
+
 " 输入的命令
 set showcmd
 " tab为4
@@ -150,8 +151,6 @@ set softtabstop=4
 " 设置折叠区域宽度
 set foldcolumn=0
 
-" 使用空格键代替zo和zc开关折叠
-nnoremap <space> za
 " 开启真色彩
 set termguicolors
 
@@ -190,5 +189,27 @@ set smartindent
 " set cindent
 "/*}}}*/
 
+" 使用空格键代替zo和zc开关折叠
+nnoremap <space> za
+
 " command line mode path auto-completion
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+" Keymap {{{
+
+let mapleader=","
+nmap <leader>s :source ~/.vimrc<cr>
+nmap <leader>e :e ~/.vimrc<cr>
+
+" 移动分割窗口
+nmap <C-j> <C-W>j
+nmap <C-k> <C-W>k
+nmap <C-h> <C-W>h
+nmap <C-l> <C-W>l
+
+" 插入模式移动光标 alt + 方向键
+inoremap <M-j> <Down>
+inoremap <M-k> <Up>
+inoremap <M-h> <left>
+inoremap <M-l> <Right>
+" }}}
