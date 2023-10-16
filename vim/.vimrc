@@ -195,6 +195,10 @@ nnoremap <space> za
 " command line mode path auto-completion
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" 分割出来的窗口位于当前窗口下边/右边
+set splitbelow
+set splitright
+
 " Keymap {{{
 
 let mapleader=","
@@ -206,6 +210,12 @@ nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
+
+" 正常模式下 alt+j,k,h,l 调整分割窗口大小
+nnoremap <M-j> :resize +5<cr>
+nnoremap <M-k> :resize -5<cr>
+nnoremap <M-h> :vertical resize -5<cr>
+nnoremap <M-l> :vertical resize +5<cr>
 
 " 插入模式移动光标 alt + 方向键
 inoremap <M-j> <Down>
