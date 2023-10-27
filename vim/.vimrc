@@ -125,7 +125,7 @@ set tabstop=4
 set shiftwidth=4			
 
 " 设置主题
-colorscheme evening 
+colorscheme solarized8_light
 
 " 折叠
 " manual 手动 退出文件不保存

@@ -1,6 +1,6 @@
 [
     {
-        "filename": "fish",
+        "filename": "shell/fish",
         "linkpath": "~/.config/fish"
     },
     {
