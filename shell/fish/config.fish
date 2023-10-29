@@ -6,10 +6,6 @@ if test ~/.aliases
     source ~/.aliases
 end
 
-if test ~/.env
-    source ~/.env
-end
-
 function fish_greeting
     echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
     echo "┃░█░█░█▀▀░█░░░█░░░█▀█░░░█░█░█▀█░█▀▄░█▀▄░█┃"
