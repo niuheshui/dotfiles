@@ -1,1 +1,1 @@
-/home/niuheshui/.fzf/shell/key-bindings.fish
+/home/niu/.fzf/shell/key-bindings.fish
