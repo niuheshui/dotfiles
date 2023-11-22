@@ -7,13 +7,9 @@ if test ~/.aliases
 end
 
 function fish_greeting
-    echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-    echo "┃░█░█░█▀▀░█░░░█░░░█▀█░░░█░█░█▀█░█▀▄░█▀▄░█┃"
-    echo "┃░█▀█░█▀▀░█░░░█░░░█░█░░░█▄█░█░█░█▀▄░█░█░▀┃"
-    echo "┃░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░░░▀░▀░▀▀▀░▀░▀░▀▀░░▀┃"
-    echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
-    echo "⭐  " (date) "  ⭐"
-    echo ""
+    date
+    echo "hello ($USER@$hostname)"
+    neofetch
 end
 
 export NEMU_HOME=$HOME/ics2020/nemu
