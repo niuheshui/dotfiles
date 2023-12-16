@@ -10,3 +10,6 @@
 [submodule "shell/zsh/.custom/plugins/zsh-syntax-highlighting"]
 	path = shell/zsh/.custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim/.vim/pack/vendor/start/vimcdoc"]
+	path = vim/.vim/pack/vendor/start/vimcdoc
+	url = https://github.com/yianwillis/vimcdoc.git
