@@ -24,13 +24,13 @@ let &t_BD = "\e[?2004l"
 let &t_PS = "\e[200~"
 let &t_PE = "\e[201~"
 " Cursor control 控制光标行为
-" let &t_RC = "\e[?12$p"
-" let &t_SH = "\e[%d q"
-" let &t_RS = "\eP$q q\e\\"
-" let &t_SI = "\e[5 q"
-" let &t_SR = "\e[3 q"
-" let &t_EI = "\e[1 q"
-" let &t_VS = "\e[?12l"
+let &t_RC = "\e[?12$p"
+let &t_SH = "\e[%d q"
+let &t_RS = "\eP$q q\e\\"
+let &t_SI = "\e[5 q"
+let &t_SR = "\e[3 q"
+let &t_EI = "\e[1 q"
+let &t_VS = "\e[?12l"
 " Focus tracking 跟踪焦点的变化，当焦点从vim窗口切换到其他窗口时，执行相应的操作
 let &t_fe = "\e[?1004h"
 let &t_fd = "\e[?1004l"
@@ -101,7 +101,7 @@ nmap Q <Nop>
 set noerrorbells visualbell t_vb=
 
 " 尽量避免使用方向键移动等不良习惯/*{{{*/
-" 这并不是唯一可能的坏习惯
+" 这并不是可能的坏习惯
 " 例如,按住 h/j/k/l 键进行移动,而不是使用更高效的移动命令,也是一个坏习惯
 " 前者可以通过 .vimrc 强制执行,而我们不知道如何阻止后者
 " 在正常模式下执行此操作...
@@ -212,14 +212,14 @@ nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
 
 " 正常模式下 alt+j,k,h,l 调整分割窗口大小
-nnoremap <M-j> :resize +5<cr>
-nnoremap <M-k> :resize -5<cr>
-nnoremap <M-h> :vertical resize -5<cr>
-nnoremap <M-l> :vertical resize +5<cr>
-
-" 插入模式移动光标 alt + 方向键
-inoremap <M-j> <Down>
-inoremap <M-k> <Up>
-inoremap <M-h> <left>
-inoremap <M-l> <Right>
+"nnoremap <M-j> :resize +5<cr>
+"nnoremap <M-k> :resize -5<cr>
+"nnoremap <M-h> :vertical resize -5<cr>
+"nnoremap <M-l> :vertical resize +5<cr>
+"
+"" 插入模式移动光标 alt + 方向键
+"inoremap <M-j> <Down>
+"inoremap <M-k> <Up>
+"inoremap <M-h> <left>
+"inoremap <M-l> <Right>
 " }}}
