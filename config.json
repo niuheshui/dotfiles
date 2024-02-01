@@ -1,7 +1,7 @@
 [
     {
         "filename": "i3",
-        "linkpath": "~/.i3"
+        "linkpath": "~/.config/i3"
     },
     {
         "filename": "shell/fish",
