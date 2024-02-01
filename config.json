@@ -1,5 +1,9 @@
 [
     {
+        "filename": "i3",
+        "linkpath": "~/.i3"
+    },
+    {
         "filename": "shell/fish",
         "linkpath": "~/.config/fish"
     },
@@ -20,8 +24,8 @@
         "linkpath": "~/.gitconfig"
     },
     {
-        "filename": "kitty/kitty.conf",
-        "linkpath": "~/.config/kitty/kitty.conf"
+        "filename": "kitty",
+        "linkpath": "~/.config/kitty"
     },
     {
         "filename": "emacs/.emacs",
