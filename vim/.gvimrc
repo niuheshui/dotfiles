@@ -61,10 +61,7 @@ syntax on
 " }}}
 
 " Keymap {{{
-let mapleader=","
-
-nmap <leader>s :source ~/.vimrc<cr>
-nmap <leader>e :e ~/.vimrc<cr>
+let mapleader=" "
 
 " map <leader>tn :tabnew<cr>
 " map <leader>tc :tabclose<cr>
@@ -78,16 +75,10 @@ nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
 
 " 正常模式下 alt+j,k,h,l 调整分割窗口大小
-nnoremap <M-j> :resize +5<cr>
-nnoremap <M-k> :resize -5<cr>
-nnoremap <M-h> :vertical resize -5<cr>
-nnoremap <M-l> :vertical resize +5<cr>
-
-" 插入模式移动光标 alt + 方向键
-inoremap <M-j> <Down>
-inoremap <M-k> <Up>
-inoremap <M-h> <left>
-inoremap <M-l> <Right>
+nnoremap <C-Down>   :resize +5<cr>
+nnoremap <C-Up>     :resize -5<cr>
+nnoremap <C-Left>   :vertical resize -5<cr>
+nnoremap <C-Right>  :vertical resize +5<cr>
 
 " " IDE like delete
 " inoremap <C-BS> <Esc>bdei
