@@ -1,58 +1,21 @@
 [
-    {
-        "filename": "i3",
-        "linkpath": "~/.config/i3"
-    },
-    {
-        "filename": "shell/fish",
-        "linkpath": "~/.config/fish"
-    },
-    {
-        "filename": "vim/.vimrc",
-        "linkpath": "~/.vimrc" 
-    },
-    {
-        "filename": "vim/.vim",
-        "linkpath": "~/.vim" 
-    },
-    {
-        "filename": "tmux/.tmux.conf",
-        "linkpath": "~/.tmux.conf"
-    },
-    {
-        "filename": "git/.gitconfig",
-        "linkpath": "~/.gitconfig"
-    },
-    {
-        "filename": "kitty",
-        "linkpath": "~/.config/kitty"
-    },
-    {
-        "filename": "emacs/.emacs",
-        "linkpath": "~/.emacs"
-    },
-    {
-        "filename": "emacs/.emacs.d",
-        "linkpath": "~/.emacs.d"
-    },
-    {
-        "filename": "shell/.aliases",
-        "linkpath": "~/.aliases"
-    },
-    {
-        "filename": "shell/zsh/.oh-my-zsh",
-        "linkpath": "~/.oh-my-zsh"
-    },
-    {
-        "filename": "shell/zsh/.zshrc",
-        "linkpath": "~/.zshrc"
-    },
-    {
-        "filename": "shell/zsh/.custom",
-        "linkpath": "~/.custom"
-    },
-    {
-        "filename": "vim/.gvimrc",
-        "linkpath": "~/.gvimrc"
-    }
+  { "filename": "vim/nvim", "linkpath": "~/.config/nvim" },
+  { "filename": "fcitx5", "linkpath": "~/.config/fcitx5" },
+  { "filename": "i3config/i3", "linkpath": "~/.config/i3" },
+  { "filename": "i3config/i3blocks", "linkpath": "~/.config/i3blocks" },
+  { "filename": "i3config/i3status", "linkpath": "~/.config/i3status" },
+  { "filename": "i3config/polybar", "linkpath": "~/.config/polybar" },
+  { "filename": "shell/fish", "linkpath": "~/.config/fish" },
+  { "filename": "vim/.vimrc", "linkpath": "~/.vimrc" },
+  { "filename": "vim/.vim", "linkpath": "~/.vim" },
+  { "filename": "tmux/.tmux.conf", "linkpath": "~/.tmux.conf" },
+  { "filename": "git/.gitconfig", "linkpath": "~/.gitconfig" },
+  { "filename": "kitty", "linkpath": "~/.config/kitty" },
+  { "filename": "emacs/.emacs", "linkpath": "~/.emacs" },
+  { "filename": "emacs/.emacs.d", "linkpath": "~/.emacs.d" },
+  { "filename": "shell/.aliases", "linkpath": "~/.aliases" },
+  { "filename": "shell/zsh/.oh-my-zsh", "linkpath": "~/.oh-my-zsh" },
+  { "filename": "shell/zsh/.zshrc", "linkpath": "~/.zshrc" },
+  { "filename": "shell/zsh/.custom", "linkpath": "~/.custom" },
+  { "filename": "vim/.gvimrc", "linkpath": "~/.gvimrc" }
 ]
