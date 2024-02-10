@@ -218,4 +218,8 @@ nnoremap <C-Down>   :resize +5<cr>
 nnoremap <C-Up>     :resize -5<cr>
 nnoremap <C-Left>   :vertical resize -5<cr>
 nnoremap <C-Right>  :vertical resize +5<cr>
+
+
+tnoremap <ESC>      <C-\><C-N>
+
 " }}} 
