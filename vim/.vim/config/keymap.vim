@@ -1,4 +1,3 @@
-
 " 取消绑定一些无用/烦人的默认按键绑定
 nmap Q <Nop> 
 " 正常模式下的“Q”进入 Ex 模式
@@ -65,4 +64,5 @@ nnoremap <C-Right>  :vertical resize +5<cr>
 
 
 tnoremap <ESC>      <C-\><C-N>
+
 

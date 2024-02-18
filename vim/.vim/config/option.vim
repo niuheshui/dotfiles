@@ -123,9 +123,9 @@ set termguicolors
 " 隐藏字符样式 eol:c 回车 tab:xyz 显示为xyyyyz这样 space:c 空格 trail: 行末的空格
 " set listchars=tab:>~,trail:·,eol:↵
 " 自动缩进
-" set autoindent
+set autoindent
 " 智能缩进
-set smartindent
+"set smartindent
 " c-style缩进
 " set cindent
 " 分割出来的窗口位于当前窗口下边/右边
