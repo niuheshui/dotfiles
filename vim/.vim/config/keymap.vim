@@ -27,7 +27,6 @@ function! ClosePair(char)
     endif
 endfunction
 
-
 inoremap ( ()<ESC>i
 inoremap ) <c-r>=ClosePair(')')<CR>
 inoremap { {}<ESC>i
@@ -43,6 +42,7 @@ nnoremap <space> za
 " command line mode path auto-completion
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+inoremap jk <ESC>
 
 let mapleader=" "
 nnoremap <leader>e  :NERDTreeToggle<CR>
