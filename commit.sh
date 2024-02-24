@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-
-git add . && git commit -m "$1" && git push origin main
+tmpfile=/tmp/git-commit-message.txt
+git add . && git commit --short > $tmpfile && git commit -F $tmpfile
