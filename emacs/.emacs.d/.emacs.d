@@ -1,0 +1,1 @@
+/home/niu/dotfiles/emacs/.emacs.d

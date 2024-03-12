@@ -11,5 +11,13 @@ export https_proxy=http://127.0.0.1:7890/
 export HTTPS_PROXY=http://127.0.0.1:7890/
 
 export NEMU_HOME=$HOME/ics2020/nemu
+export NAVY_HOME=$HOME/ics2020/navy-apps
 export AM_HOME=$HOME/ics2020/abstract-machine
+export ARCH=x86-nemu
+export ISA=x86
+
+
+
+
 export REPO_DIR=$HOME/CS61B
+

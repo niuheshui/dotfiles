@@ -131,3 +131,6 @@ set smartindent
 " 分割出来的窗口位于当前窗口下边/右边
 set splitbelow
 set splitright
+
+
+set cursorline
