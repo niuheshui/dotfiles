@@ -22,7 +22,10 @@ exec_always feh --bg-fill $bg_path
 exec_always --no-startup-id /home/niu/.config/polybar/launch.sh --blocks
 
 # fcitx
-exec_always fcitx5
+exec_always --no-startup-id fcitx5
+
+# picom
+exec_always --no-startup-id picom
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
