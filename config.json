@@ -1,6 +1,7 @@
 [
   { "enable": true,  "filename": "fcitx5", "linkpath": "~/.config/fcitx5" },
   { "enable": true,  "filename": "i3config/i3", "linkpath": "~/.config/i3" },
+  { "enable": true,  "filename": "i3config/picom", "linkpath": "~/.config/picom" },
   { "enable": false,  "filename": "i3config/i3blocks", "linkpath": "~/.config/i3blocks" },
   { "enable": false,  "filename": "i3config/i3status", "linkpath": "~/.config/i3status" },
   { "enable": false,  "filename": "i3config/polybar", "linkpath": "~/.config/polybar" },

@@ -40,12 +40,12 @@ WHITE   = 37
 
 
 def create_sofwlink(enable, filename, linkpath):
-#    if enable or is_link(linkpath):
-#        print(make_color_text(RED, '- %s' % linkpath))
-#        call(f'rm -rf {linkpath}', shell = True)
+    if enable or is_link(linkpath):
+        print(make_color_text(RED, '- %s' % linkpath))
+        call(f'rm -rf {linkpath}', shell = True)
     if enable:
         print(make_color_text(GREEN, '+ %s -> %s' % (linkpath, filename)))
-        call(f'ln -sf {filename} {linkpath}', shell = True)
+        call(f'ln -s {filename} {linkpath}', shell = True)
 
 for d in conf:
     e = d['enable'] 
