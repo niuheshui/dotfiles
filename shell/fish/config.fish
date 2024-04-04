@@ -2,11 +2,11 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-if test ~/.aliases
+if test -e ~/.aliases
     source ~/.aliases
 end
 
-if test ~/.environment
+if test -e ~/.environment
     source ~/.environment
 end
 
