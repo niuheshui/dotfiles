@@ -35,7 +35,7 @@ let $LANG = 'en_US.UTF-8'
 " }}}
 
 " GUI {{{
-set guifont=Ubuntu\ Mono\ 20
+set guifont=SauceCodeProNerdFont\ 25
 colorscheme atom
 " 分割出来的窗口位于当前窗口下边/右边
 set splitbelow

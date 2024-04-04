@@ -11,8 +11,6 @@ if test -e ~/.environment
 end
 
 function fish_greeting
-    date
-    echo "hello ($USER@$hostname)"
     neofetch
 end
 
