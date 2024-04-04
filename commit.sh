@@ -1,6 +1,6 @@
 tmpfile=/tmp/git-commit-message.txt
 remote=origin
-remote_branch=main
+remote_branch=arch
 
 git add . 
 git commit --short > $tmpfile 
