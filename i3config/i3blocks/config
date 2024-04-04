@@ -1,0 +1,16 @@
+[Volume]
+command=echo 󰕾 $(amixer get Master | grep -o -E '([0-9]*%|\[(off|on)\])')
+color=#FF00FF
+interval=once
+signal=1
+
+[Brightness]
+command=python3 -c "print(f'󰖨 {int($(brightnessctl g) / $(brightnessctl m) * 100)}')"
+color=#FF0000
+interval=once
+signal=2
+
+[Time]
+command=date +%H:%M:%S
+color=#FFFF00
+interval=1
