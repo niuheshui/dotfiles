@@ -8,18 +8,18 @@ nmap Q <Nop>
 " 例如,按住 h/j/k/l 键进行移动,而不是使用更高效的移动命令,也是一个坏习惯
 " 前者可以通过 .vimrc 强制执行,而我们不知道如何阻止后者
 " 在正常模式下执行此操作...
-nnoremap <Left>  :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up>    :echoe "Use k"<CR>
-nnoremap <Down>  :echoe "Use j"<CR>
+" nnoremap <Left>  :echoe "Use h"<CR>
+" nnoremap <Right> :echoe "Use l"<CR>
+" nnoremap <Up>    :echoe "Use k"<CR>
+" nnoremap <Down>  :echoe "Use j"<CR>
 " ...并且处于插入模式
-inoremap <Left>  <ESC>:echoe "Use h"<CR>
-inoremap <Right> <ESC>:echoe "Use l"<CR>
-inoremap <Up>    <ESC>:echoe "Use k"<CR>
-inoremap <Down>  <ESC>:echoe "Use j"<CR>
+" inoremap <Left>  <ESC>:echoe "Use h"<CR>
+" inoremap <Right> <ESC>:echoe "Use l"<CR>
+" inoremap <Up>    <ESC>:echoe "Use k"<CR>
+" inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " 使用空格键代替zo和zc开关折叠
-nnoremap <space> za
+nnoremap <CR> za
 
 " command line mode path auto-completion
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -46,5 +46,8 @@ nnoremap <C-Right>  :vertical resize +5<cr>
 
 
 tnoremap <ESC>      <C-\><C-N>
+
+" 可视模式下回车复制到系统剪切版，需要支持
+vnoremap <CR>   "+y
 
 

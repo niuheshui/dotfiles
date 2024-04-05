@@ -21,6 +21,9 @@ exec_always feh --bg-fill $bg_path
 # polybar
 # exec_always --no-startup-id /home/niu/.config/polybar/launch.sh --blocks
 
+# pasystray
+exec_always --no-startup-id pkill pasystray; pasystray
+
 # nm-applet
 exec_always --no-startup-id nm-applet
 

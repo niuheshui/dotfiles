@@ -1,5 +1,5 @@
 [Volume]
-command=echo 󰕾 $(amixer get Master | grep -o -E '([0-9]*%|\[(off|on)\])')
+command=echo 󰕾 $(amixer get Master | grep -o -E '([0-9]*%|\[(off|on)\])' | sort | uniq)
 color=#FF00FF
 interval=once
 signal=1
@@ -11,6 +11,7 @@ interval=once
 signal=2
 
 [Time]
-command=date +%H:%M:%S
+#command=date +%H:%M:%S
+command=date 
 color=#FFFF00
 interval=1
