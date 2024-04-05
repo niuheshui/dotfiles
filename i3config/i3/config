@@ -259,6 +259,7 @@ set $lightgray  #bdae93
 bar {
 #    status_command i3status
     status_command i3blocks 
+    position top
     bindsym button4 exec brightnessctl s +10%
     bindsym button5 exec brightnessctl s 10%-
     colors {
