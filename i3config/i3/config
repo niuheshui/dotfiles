@@ -24,9 +24,6 @@ exec_always feh --bg-fill $bg_path
 # pasystray
 exec_always --no-startup-id pkill pasystray; pasystray
 
-# nm-applet
-exec_always --no-startup-id nm-applet
-
 # fcitx
 exec_always --no-startup-id fcitx5
 
@@ -35,7 +32,7 @@ exec_always --no-startup-id picom
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:SauceCodePro Nerd Font 13
+font pango:SauceCodeProNerdFont 13
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -74,14 +71,14 @@ exec --no-startup-id nm-applet
 # Arch Linux
 # volume
 set $refresh_volume pkill -SIGRTMIN+1 i3blocks
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 10%+ && $refresh_volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 10%- && $refresh_volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ && $refresh_volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- && $refresh_volume
 bindsym XF86AudioMute        exec --no-startup-id amixer set Master toggle && $refresh_volume
 
 # brightness
 set $refresh_brightness pkill -SIGRTMIN+2 i3blocks
-bindsym XF86MonBrightnessUp     exec --no-startup-id brightnessctl set 10%+ && $refresh_brightness
-bindsym XF86MonBrightnessDown   exec --no-startup-id brightnessctl set 10%- && $refresh_brightness
+bindsym XF86MonBrightnessUp     exec --no-startup-id brightnessctl set 5%+ && $refresh_brightness
+bindsym XF86MonBrightnessDown   exec --no-startup-id brightnessctl set 5%- && $refresh_brightness
 
 # flameshot
 bindsym $mod+p exec flameshot gui
@@ -164,9 +161,12 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 " "
-set $ws2 " "
-set $ws3 "󰎄 "
+#set $ws1 " "
+#set $ws2 " "
+#set $ws3 "󰎄 "
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -202,7 +202,9 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 # Allocate applications to workspaces
 # show window class run the command xprop
 for_window [class="Google-chrome"]  move to workspace $ws2
+for_window [class="firefox"]        move to workspace $ws2 
 for_window [class="yesplaymusic"]   move to workspace $ws3
+
 for_window [class="Clash-verge"]            floating enable
 for_window [class="VirtualBox Manager"]     floating enable
 for_window [class="VirtualBox Machine"]     floating enable
@@ -265,18 +267,18 @@ bar {
     position top
     bindsym button4 exec brightnessctl s +10%
     bindsym button5 exec brightnessctl s 10%-
-    colors {
-        # bar background color
-        background $bg
-        # text color used for blocks that do not have a color specified.
-        statusline $lightgray
-
-        # workspaces section text       border      backgr. 
-        focused_workspace    $lightgray $lightgray  $bg
-        inactive_workspace   $darkgray  $darkgray   $lightgray
-        active_workspace     $darkgray  $darkgray   $lightgray
-        urgent_workspace     $red       $red        $bg
-    }
+#    colors {
+#        # bar background color
+#        background $bg
+#        # text color used for blocks that do not have a color specified.
+#        statusline $lightgray
+#
+#        # workspaces section text       border      backgr. 
+#        focused_workspace    $lightgray $lightgray  $bg
+#        inactive_workspace   $darkgray  $darkgray   $lightgray
+#        active_workspace     $darkgray  $darkgray   $lightgray
+#        urgent_workspace     $red       $red        $bg
+#    }
 }
 
 # class                 border      backgr      text        indicator   child_border
