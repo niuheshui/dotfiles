@@ -11,6 +11,8 @@
 
 # show keycode or keysym run the command xev
 
+bindsym Ctrl+` nop
+
 set $mod Mod4
 
 # Display Wallpaper
