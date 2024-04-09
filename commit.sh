@@ -1,8 +1,8 @@
 tmpfile=/tmp/git-commit-message.txt
 remote=origin
-remote_branch=arch
+branch=$(git branch | grep "\*" | sed "s/\*//" | xargs echo)
 
 git add . 
 git commit --short > $tmpfile 
 git commit -F $tmpfile 
-git push $remote $remote_branch
+git push $remote $branch:$branch
