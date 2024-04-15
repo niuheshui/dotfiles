@@ -1,4 +1,6 @@
 [
+  { "enable": true,  "filename": "mail/.muttrc", "linkpath": "~/.muttrc" },
+  { "enable": true,  "filename": "mail/.msmtprc", "linkpath": "~/.msmtprc" },
   { "enable": true,  "filename": "fcitx5", "linkpath": "~/.config/fcitx5" },
   { "enable": true,  "filename": "i3config/i3", "linkpath": "~/.config/i3" },
   { "enable": true,  "filename": "i3config/picom", "linkpath": "~/.config/picom" },
