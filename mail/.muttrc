@@ -1,0 +1,13 @@
+set from = "793347740@qq.com"
+set realname = "niuheshui"
+set imap_user = "793347740@qq.com"
+set imap_pass = "mismetrhksyfbchi"
+set folder = "imaps://imap.qq.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+set move = no
+set imap_keepalive = 900
+set sendmail="/usr/bin/msmtp"
