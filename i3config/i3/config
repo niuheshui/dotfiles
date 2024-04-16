@@ -71,9 +71,10 @@ exec --no-startup-id nm-applet
 # Arch Linux
 # volume
 set $refresh_volume pkill -SIGRTMIN+1 i3blocks
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ && $refresh_volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- && $refresh_volume
-bindsym XF86AudioMute        exec --no-startup-id amixer set Master toggle && $refresh_volume
+set $alsa_card 1
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c $alsa_card set Master 5%+ && $refresh_volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c $alsa_card set Master 5%- && $refresh_volume
+bindsym XF86AudioMute        exec --no-startup-id amixer -c $alsa_card set Master toggle && $refresh_volume
 
 # brightness
 set $refresh_brightness pkill -SIGRTMIN+2 i3blocks

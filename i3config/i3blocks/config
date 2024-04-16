@@ -1,5 +1,5 @@
 [Volume]
-command=echo 󰕾 $(amixer get Master | grep -o -E '([0-9]*%|\[(off|on)\])' | sort | uniq)
+command=echo 󰕾 $(amixer -c 1 get Master | grep -o -E '([0-9]*%|\[(off|on)\])' | sort | uniq)
 color=#FF00FF
 interval=once
 signal=1
