@@ -134,3 +134,5 @@ set splitright
 
 
 set cursorline
+
+set linebreak
