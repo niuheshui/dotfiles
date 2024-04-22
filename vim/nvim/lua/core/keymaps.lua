@@ -20,8 +20,8 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
@@ -50,6 +50,8 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "<S-j>", ":m .+1<CR>==", opts)
 keymap("v", "<S-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
+
+keymap("v", "<CR>", "\"+y", opts)
 
 -- Visual Block --
 -- Move text up and down

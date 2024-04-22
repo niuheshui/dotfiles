@@ -15,7 +15,7 @@ set $mod Mod4
 
 # Display Wallpaper
 #set $bg_path /home/niu/.local/share/backgrounds/wallhaven-5gpv25.jpg
-set $bg_path /home/niu/.local/share/backgrounds/background.jpg
+set $bg_path /home/niu/.local/share/backgrounds/bg
 exec_always feh --bg-fill $bg_path
 
 # polybar
