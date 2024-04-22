@@ -11,6 +11,7 @@ if test -e ~/.environment
 end
 
 function fish_greeting
+    echo 
     neofetch
 end
 
