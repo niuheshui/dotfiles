@@ -8,3 +8,4 @@ alias mosaic='python3 /home/niu/jyy-os/04-数学视角的操作系统/mosaic/mos
 alias collect='python3 /home/niu/jyy-os/04-数学视角的操作系统/mosaic/collect.py' 
 alias gdb='gdb -tui'
 alias py='/usr/bin/env python3'
+alias man='man --nh'
