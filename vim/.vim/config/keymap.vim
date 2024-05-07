@@ -19,7 +19,7 @@ nmap Q <Nop>
 " inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " 使用空格键代替zo和zc开关折叠
-nnoremap <CR> za
+nnoremap <Space> za
 
 " command line mode path auto-completion
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
