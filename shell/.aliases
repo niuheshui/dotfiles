@@ -1,3 +1,6 @@
+# use shell is fish
+
+
 alias ll='ls -alFh'
 # alias proxy_on='export all_proxy=socks5://127.0.0.1:7890'
 # alias proxy_off='unset all_proxy'
@@ -9,4 +12,9 @@ alias collect='python3 /home/niu/jyy-os/04-数学视角的操作系统/mosaic/co
 alias gdb='gdb -tui'
 alias py='/usr/bin/env python3'
 alias man='man --nh'
-alias fvim='vim (fzf)'
+
+# use fzf version
+alias fvim='vim (find . | fzf)'
+# change current directory to directory of target file
+alias fcd='cd (dirname (find . | fzf))'
+alias fcat='cat (find . | fzf)'
