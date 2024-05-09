@@ -32,7 +32,7 @@ nnoremap <leader>e  :NERDTreeToggle<CR>
 "nmap <leader>s :source ~/.vimrc<cr>
 "nmap <leader>e :e ~/.vimrc<cr>
 
-" 移动分割窗口
+" 切换窗口 
 nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <C-h> <C-W>h

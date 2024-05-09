@@ -1,4 +1,4 @@
-" Mouse support 启用鼠标支持，允许在vim中使用鼠标进行操作/*{{{*/  
+" Mouse support 启用鼠标支持，允许在vim中使用鼠标进行操作
 set mouse=a
 set ttymouse=sgr
 set balloonevalterm
@@ -14,10 +14,10 @@ let &t_Ce = "\e[4:0m"
 let &t_Ts = "\e[9m"
 let &t_Te = "\e[29m"
 " Truecolor support 支持真彩色，可以在vim中使用真彩色来渲染文本
-"let &t_8f = "\e[38:2:%lu:%lu:%lum"
-"let &t_8b = "\e[48:2:%lu:%lu:%lum"
-"let &t_RF = "\e]10;?\e\\"
-"let &t_RB = "\e]11;?\e\\"
+let &t_8f = "\e[38:2:%lu:%lu:%lum"
+let &t_8b = "\e[48:2:%lu:%lu:%lum"
+let &t_RF = "\e]10;?\e\\"
+let &t_RB = "\e]11;?\e\\"
 " Bracketed paste 支持括号粘贴，用于在vim中粘贴带有括号的文本
 let &t_BE = "\e[?2004h"
 let &t_BD = "\e[?2004l"
@@ -45,7 +45,6 @@ let &t_RT = "\e[23;2t"
 " using a color theme with a background color in terminals such as
 " kitty that do not support background color erase.
 let &t_ut=''
-"/*}}}*/
 
 
 " Vim 基于 Vi. 设置“no兼容”会切换默认的 Vi 兼容模式并启用有用的 Vim 功能
