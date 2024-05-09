@@ -1,4 +1,5 @@
 [
+  { "enable": true,  "filename": "ranger", "linkpath": "~/.config/ranger" },
   { "enable": true,  "filename": "mail/.muttrc", "linkpath": "~/.muttrc" },
   { "enable": true,  "filename": "mail/.msmtprc", "linkpath": "~/.msmtprc" },
   { "enable": true,  "filename": "fcitx5", "linkpath": "~/.config/fcitx5" },

@@ -18,3 +18,5 @@ alias fvim='vim (find . | fzf)'
 # change current directory to directory of target file
 alias fcd='cd (dirname (find . | fzf))'
 alias fcat='cat (find . | fzf)'
+
+alias icat='kitten icat'
