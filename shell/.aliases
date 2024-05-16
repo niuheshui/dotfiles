@@ -12,6 +12,7 @@ alias collect='python3 /home/niu/jyy-os/04-数学视角的操作系统/mosaic/co
 alias gdb='gdb -tui'
 alias py='/usr/bin/env python3'
 alias man='man --nh'
+alias tree='tree -C'
 
 # use fzf version
 alias fvim='vim (find . | fzf)'
@@ -20,3 +21,4 @@ alias fcd='cd (dirname (find . | fzf))'
 alias fcat='cat (find . | fzf)'
 
 alias icat='kitten icat'
+
