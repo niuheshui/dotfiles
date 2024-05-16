@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 msg=/tmp/git-commit-message.txt
 remote=origin
 branch=$(git branch | grep "\*" | sed "s/\*//" | xargs echo)

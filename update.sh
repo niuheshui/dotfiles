@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 remote=origin
 
 if [[ $# -gt 0 ]]
