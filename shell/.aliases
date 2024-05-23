@@ -22,3 +22,4 @@ alias fcat='cat (find . | fzf)'
 
 alias icat='kitten icat'
 
+alias vless='vim -c "set nonumber | set norelativenumber | set nowrap" -'
