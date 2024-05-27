@@ -1,50 +1,52 @@
-" Mouse support 启用鼠标支持，允许在vim中使用鼠标进行操作
-set mouse=a
-set ttymouse=sgr
-set balloonevalterm
-" Styled and colored underline support 支持带样式和颜色的下划线，可以在vim中使用不同的下划线样式和颜色
-let &t_AU = "\e[58:5:%dm"
-let &t_8u = "\e[58:2:%lu:%lu:%lum"
-let &t_Us = "\e[4:2m"
-let &t_Cs = "\e[4:3m"
-let &t_ds = "\e[4:4m"
-let &t_Ds = "\e[4:5m"
-let &t_Ce = "\e[4:0m"
-" Strikethrough 支持删除线，可以在vim中使用删除线来标记文本
-let &t_Ts = "\e[9m"
-let &t_Te = "\e[29m"
-" Truecolor support 支持真彩色，可以在vim中使用真彩色来渲染文本
-let &t_8f = "\e[38:2:%lu:%lu:%lum"
-let &t_8b = "\e[48:2:%lu:%lu:%lum"
-let &t_RF = "\e]10;?\e\\"
-let &t_RB = "\e]11;?\e\\"
-" Bracketed paste 支持括号粘贴，用于在vim中粘贴带有括号的文本
-let &t_BE = "\e[?2004h"
-let &t_BD = "\e[?2004l"
-let &t_PS = "\e[200~"
-let &t_PE = "\e[201~"
-" Cursor control 控制光标行为
-let &t_RC = "\e[?12$p"
-let &t_SH = "\e[%d q"
-let &t_RS = "\eP$q q\e\\"
-let &t_SI = "\e[5 q"
-let &t_SR = "\e[3 q"
-let &t_EI = "\e[1 q"
-let &t_VS = "\e[?12l"
-" Focus tracking 跟踪焦点的变化，当焦点从vim窗口切换到其他窗口时，执行相应的操作
-let &t_fe = "\e[?1004h"
-let &t_fd = "\e[?1004l"
-execute "set <FocusGained>=\<Esc>[I"
-execute "set <FocusLost>=\<Esc>[O"
-" Window title 设置vim窗口的标题，可以在终端中显示自定义的窗口标题
-let &t_ST = "\e[22;2t"
-let &t_RT = "\e[23;2t"
+if $TERM == "kitty"
+  " Mouse support 启用鼠标支持，允许在vim中使用鼠标进行操作
+  set mouse=a
+  set ttymouse=sgr
+  set balloonevalterm
+  " Styled and colored underline support 支持带样式和颜色的下划线，可以在vim中使用不同的下划线样式和颜色
+  let &t_AU = "\e[58:5:%dm"
+  let &t_8u = "\e[58:2:%lu:%lu:%lum"
+  let &t_Us = "\e[4:2m"
+  let &t_Cs = "\e[4:3m"
+  let &t_ds = "\e[4:4m"
+  let &t_Ds = "\e[4:5m"
+  let &t_Ce = "\e[4:0m"
+  " Strikethrough 支持删除线，可以在vim中使用删除线来标记文本
+  let &t_Ts = "\e[9m"
+  let &t_Te = "\e[29m"
+  " Truecolor support 支持真彩色，可以在vim中使用真彩色来渲染文本
+  let &t_8f = "\e[38:2:%lu:%lu:%lum"
+  let &t_8b = "\e[48:2:%lu:%lu:%lum"
+  let &t_RF = "\e]10;?\e\\"
+  let &t_RB = "\e]11;?\e\\"
+  " Bracketed paste 支持括号粘贴，用于在vim中粘贴带有括号的文本
+  let &t_BE = "\e[?2004h"
+  let &t_BD = "\e[?2004l"
+  let &t_PS = "\e[200~"
+  let &t_PE = "\e[201~"
+  " Cursor control 控制光标行为
+  let &t_RC = "\e[?12$p"
+  let &t_SH = "\e[%d q"
+  let &t_RS = "\eP$q q\e\\"
+  let &t_SI = "\e[5 q"
+  let &t_SR = "\e[3 q"
+  let &t_EI = "\e[1 q"
+  let &t_VS = "\e[?12l"
+  " Focus tracking 跟踪焦点的变化，当焦点从vim窗口切换到其他窗口时，执行相应的操作
+  let &t_fe = "\e[?1004h"
+  let &t_fd = "\e[?1004l"
+  execute "set <FocusGained>=\<Esc>[I"
+  execute "set <FocusLost>=\<Esc>[O"
+  " Window title 设置vim窗口的标题，可以在终端中显示自定义的窗口标题
+  let &t_ST = "\e[22;2t"
+  let &t_RT = "\e[23;2t"
 
-" vim hardcodes background color erase even if the terminfo file does
-" not contain bce. This causes incorrect background rendering when
-" using a color theme with a background color in terminals such as
-" kitty that do not support background color erase.
-let &t_ut=''
+  " vim hardcodes background color erase even if the terminfo file does
+  " not contain bce. This causes incorrect background rendering when
+  " using a color theme with a background color in terminals such as
+  " kitty that do not support background color erase.
+  let &t_ut=''
+endif
 
 
 " Vim 基于 Vi. 设置“no兼容”会切换默认的 Vi 兼容模式并启用有用的 Vim 功能
@@ -86,10 +88,10 @@ set noerrorbells visualbell t_vb=
 " 输入的命令
 set showcmd
 " tab为4
-set tabstop=4 				
+set tabstop=2 				
 
 " << >> 缩进为4个空格
-set shiftwidth=4			
+set shiftwidth=2
 
 " 设置主题
 colorscheme gruvbox
@@ -112,7 +114,7 @@ setlocal noswapfile " 不要生成swap文件
 set expandtab
 set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ [%{&encoding}\ 0x%B]\ Ln\ %l,\ Col\ %c/%L%) " 设置在状态行显示的信息
 " 退格键可以一次删除4个空格
-set softtabstop=4
+set softtabstop=2
 " 设置折叠区域宽度
 set foldcolumn=0
 " 开启真色彩
@@ -122,7 +124,7 @@ set termguicolors
 " 隐藏字符样式 eol:c 回车 tab:xyz 显示为xyyyyz这样 space:c 空格 trail: 行末的空格
 " set listchars=tab:>~,trail:·,eol:↵
 " 自动缩进
- set autoindent
+set autoindent
 " 智能缩进
 " set smartindent
 " c-style缩进
