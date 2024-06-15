@@ -15,6 +15,8 @@ local servers = {
   },
 	pylsp = {},
   ast_grep = {},
+  jdtls = {},
+  clangd = {},
 --	"jsonls",
 }
 

@@ -128,5 +128,4 @@ cmp.setup {
     ghost_text = true,
     native_menu = false,
   },
-   
 }

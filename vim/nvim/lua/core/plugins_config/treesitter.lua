@@ -5,7 +5,7 @@ require'nvim-treesitter.configs'.setup {
     "vimdoc", "query",
     "java", "bash",
     "python", "json",
-    "make",
+    "make", "cpp",
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
