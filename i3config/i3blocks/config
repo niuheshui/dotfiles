@@ -2,14 +2,14 @@
 
 [Volume]
 #command=notify-send $(echo 󰕾 $(amixer -c 1 get Master | grep -o -E '([0-9]*%|\[(off|on)\])' | sort | uniq))
-command=.config/i3blocks/volume.sh
+command=bash $HOME/.config/i3blocks/volume.sh
 color=#C466C9
 interval=once
 signal=1
 
 [Brightness]
 #command=python3 -c "print(f'󰖨 {int($(brightnessctl g) / $(brightnessctl m) * 100)}')"
-command=.config/i3blocks/brightness.sh
+command=bash $HOME/.config/i3blocks/brightness.sh
 color=#F40049
 interval=once
 signal=2
