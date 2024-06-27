@@ -19,7 +19,8 @@ while true; do
     esac
   else
     echo -e '\x1b[H'
-    date +%T | toilet -f mono12 --filter gay
+    #date +%T | toilet -f mono12 --filter gay
+    date +%T | toilet -f mono12 
   fi
 
 done
