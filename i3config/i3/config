@@ -297,4 +297,4 @@ client.urgent           $red        $red        $white      $red        $red
 title_align center
 default_border pixel 2
 default_floating_border pixel 2
-gaps inner 10px
+gaps inner 2px
